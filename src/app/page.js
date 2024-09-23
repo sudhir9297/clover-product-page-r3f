@@ -25,6 +25,7 @@ export default function Home() {
         <div className="h-[100px] flex gap-4  px-4 ">
           {thumbnails.map((el) => (
             <div
+              key={el.id}
               onClick={() => handleCubeRotation(el.rotation)}
               className=" cursor-pointer aspect-[1.2] rounded-lg flex justify-center items-center  bg-[#F2F0EA]"
             >
