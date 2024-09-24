@@ -30,7 +30,7 @@ const Details = ({ variation, handleVariationClick }) => {
       </p>
 
       <div className="mt-4 font-mono text-sm font-semibold lg:mt-6">
-        Color: <span className="capitalize text-[#535665]/50">{type}</span>
+        Color: <span className="capitalize text-[#535665]/70">{type}</span>
       </div>
       <div className="mt-3 flex gap-2">
         {productVariation.map((el) => (
