@@ -10,9 +10,9 @@ const Details = ({ variation, handleVariationClick }) => {
     <div className="flex h-full flex-col justify-start pt-6 lg:px-12 lg:pt-0">
       <span className="text-md pb-2 font-mono text-[#535665]">{sku}</span>
       <h1 className="text-4xl font-semibold lg:text-6xl">{name}</h1>
-      <p className="text-md pb-4 pt-2 text-[#535665] lg:pb-6 lg:pt-4 lg:text-xl">
+      <span className="text-md pb-4 pt-2 text-[#535665] lg:pb-6 lg:pt-4 lg:text-xl">
         {subDesc}
-      </p>
+      </span>
 
       <div className="flex items-center gap-4 py-2 lg:py-4">
         <span className="flex">
@@ -24,7 +24,7 @@ const Details = ({ variation, handleVariationClick }) => {
           ({totalReview} Reviews)
         </span>
       </div>
-      <h1 className="pt-4 text-4xl font-semibold lg:pt-6">₹{price}.00</h1>
+      <span className="pt-4 text-4xl font-semibold lg:pt-6">₹{price}.00</span>
       <p className="py-1 text-sm font-bold text-[#199892]">
         inclusive of all taxes
       </p>
@@ -52,7 +52,7 @@ const Details = ({ variation, handleVariationClick }) => {
         Add to Cart
       </button>
       <p className="mt-2 flex items-center gap-2 text-xs font-semibold text-[#535665]">
-        <Truck /> Free Delivery orn order over Rs.5000
+        <Truck /> Free Delivery orn order over ₹5000
       </p>
     </div>
   );

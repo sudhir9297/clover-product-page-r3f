@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <section>
       <div className="py-4 text-sm text-[#535665]">
-        Home / Footwear / Women Footwear / Heels /{" "}
+        Home / Women Footwear / Heels /{" "}
         <span className="font-semibold text-black">{variation.name}</span>
       </div>
       <div className="flex flex-col lg:h-[80vh] lg:flex-row">
