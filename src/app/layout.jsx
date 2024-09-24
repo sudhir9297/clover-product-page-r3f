@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} h-full w-full px-32`}
+        className={`${geistSans.variable} ${geistMono.variable} h-full w-full px-4 lg:px-32`}
       >
         <Header />
         <main className="h-full w-full">{children}</main>

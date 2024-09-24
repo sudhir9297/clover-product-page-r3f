@@ -1,25 +1,26 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { CameraControls, Center, Environment } from "@react-three/drei";
-import { Model } from "./Model";
+import { Environment } from "@react-three/drei";
 
-const Experience = ({ cubeRotation }) => {
+import Scene from "@/components/Scene";
+import { LoadingAnimation } from "@/components/LoadingAnimation";
+
+export default function Experience({ cameraPosition }) {
+  function Fallback() {
+    return <LoadingAnimation />;
+  }
+
   return (
-    <Canvas className="rounded-lg" camera={{ position: [-8, 3, 8] }}>
+    <Canvas
+      gl={{ preserveDrawingBuffer: true }}
+      style={{ width: "100%", height: "100%", borderRadius: "10px" }}
+    >
       <color attach="background" args={["#F2F0EA"]} />
       <Environment files={"/default.exr"} blur={1} />
-      <Center>
-        <Model cubeRotation={cubeRotation} />
-      </Center>
-
-      <CameraControls
-        minDistance={6}
-        maxDistance={20}
-        verticalDragToForward={true}
-      />
+      <Suspense fallback={<Fallback />}>
+        <Scene cameraPosition={cameraPosition} />
+      </Suspense>
     </Canvas>
   );
-};
-
-export default Experience;
+}

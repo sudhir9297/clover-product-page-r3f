@@ -14,7 +14,6 @@ export function Model(props) {
         y: props.cubeRotation.y,
         z: props.cubeRotation.z,
         duration: 1,
-
         ease: "power2.inOut",
         onUpdate: () => {
           ref.current.rotation.x = prevRotation.current.x;
@@ -50,7 +49,13 @@ export function Model(props) {
         receiveShadow
         geometry={nodes.body.geometry}
         material={materials.body}
-      />
+      >
+        {/* <meshStandardMaterial
+          color="#C90023"
+          metalness={0.0001}
+          roughness={0.077273}
+        /> */}
+      </mesh>
       <mesh
         castShadow
         receiveShadow
