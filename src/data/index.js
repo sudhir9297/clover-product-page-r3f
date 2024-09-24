@@ -2,10 +2,12 @@ export const productVariation = [
   {
     id: 1,
     sku: "HEEL-RED-X008",
-    name: "Red Hell 3",
+    name: "Crimson Flame Stiletto",
+    subDesc:
+      "A sleek red Stiletto pump with a high heel, perfect for adding bold elegance to any outfit.",
     totalReview: 42,
     rating: 4,
-    price: 9900,
+    price: 7360,
     thumbnail: "/thumb/red/1-thumb.png",
     type: "red",
     variation: [
@@ -18,10 +20,12 @@ export const productVariation = [
   {
     id: 2,
     sku: "HEEL-BROWN-X008",
-    name: "BROWN Heaven 2",
+    name: "Chestnut Luxe Stiletto",
+    subDesc:
+      "A chic brown Stiletto pump with a slender heel, offering understated sophistication and versatile style.",
     totalReview: 22,
     rating: 3,
-    price: 8800,
+    price: 9020,
     thumbnail: "/thumb/red/1-thumb.png",
     type: "brown",
     variation: [
@@ -34,10 +38,12 @@ export const productVariation = [
   {
     id: 3,
     sku: "HEEL-GOLD-X008",
-    name: "GOLD Earth 1",
+    name: "Golden Glimmer Stiletto",
+    subDesc:
+      "A glamorous gold Stiletto pump with a high, shimmering heel that instantly elevates your look with luxe flair.",
     totalReview: 12,
-    rating: 5,
-    price: 10900,
+    rating: 4,
+    price: 8118,
     thumbnail: "/thumb/red/1-thumb.png",
     type: "gold",
     variation: [

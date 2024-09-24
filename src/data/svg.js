@@ -4,8 +4,8 @@ export const Star = ({ fill }) => {
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
-      fill={fill ? "#FFE234" : "none"}
-      stroke={fill ? "#FFE234" : "#CFCFCF"}
+      fill={fill ? "#199892" : "none"}
+      stroke={fill ? "#199892" : "#CFCFCF"}
       strokeLinecap="round"
       strokeLinejoin="round"
       className="lucide lucide-star"
