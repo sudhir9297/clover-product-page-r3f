@@ -1,14 +1,18 @@
 "use client";
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
+import { Environment, Html } from "@react-three/drei";
 
 import Scene from "@/components/Scene";
 import { LoadingAnimation } from "@/components/LoadingAnimation";
 
 export default function Experience({ cameraPosition }) {
   function Fallback() {
-    return <LoadingAnimation />;
+    return (
+      <Html>
+        <LoadingAnimation />
+      </Html>
+    );
   }
 
   return (
