@@ -46,7 +46,7 @@ const Details = ({ variation, handleVariationClick }) => {
 
       <button
         onClick={() => alert("Item Added to Imaginary Cart")}
-        className="mt-8 flex w-fit items-center gap-2 rounded-lg bg-black p-3 px-24 font-mono text-sm font-semibold text-white transition-all duration-300 hover:bg-black/70 lg:mt-12"
+        className="mt-8 flex w-2/3 items-center justify-center gap-2 text-nowrap rounded-lg bg-black p-3 px-8 font-mono text-sm font-semibold text-white transition-all duration-300 hover:bg-black/70 lg:mt-12 lg:w-3/4"
       >
         <Cart />
         Add to Cart

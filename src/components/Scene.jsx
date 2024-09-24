@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React, { Suspense, useContext, useEffect, useRef } from "react";
 import {
   CameraControls,
   OrbitControls,
@@ -10,8 +10,11 @@ import { useThree } from "@react-three/fiber";
 import gsap from "gsap";
 
 import { Model } from "@/components/Model";
+import { StoreContext } from "@/context/store";
 
-function Scene({ cameraPosition }) {
+function Scene() {
+  const { cameraPosition } = useContext(StoreContext);
+
   const orbitControlsRef = useRef();
   const { camera } = useThree();
 

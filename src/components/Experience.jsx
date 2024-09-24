@@ -1,4 +1,3 @@
-"use client";
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, Html } from "@react-three/drei";
@@ -6,7 +5,7 @@ import { Environment, Html } from "@react-three/drei";
 import Scene from "@/components/Scene";
 import { LoadingAnimation } from "@/components/LoadingAnimation";
 
-export default function Experience({ cameraPosition }) {
+export default function Experience() {
   function Fallback() {
     return (
       <Html>
@@ -23,7 +22,7 @@ export default function Experience({ cameraPosition }) {
       <color attach="background" args={["#F2F0EA"]} />
       <Environment files={"/default.exr"} blur={1} />
       <Suspense fallback={<Fallback />}>
-        <Scene cameraPosition={cameraPosition} />
+        <Scene />
       </Suspense>
     </Canvas>
   );

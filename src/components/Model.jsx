@@ -1,60 +1,64 @@
-import React, { useEffect, useLayoutEffect, useRef } from "react";
+import React, { useContext } from "react";
 import { useGLTF } from "@react-three/drei";
-import { gsap } from "gsap";
+import { StoreContext } from "@/context/store";
 
 export function Model(props) {
-  const ref = useRef();
-  const prevRotation = useRef({ x: 0, y: 0, z: 0 });
+  const { currentVariation } = useContext(StoreContext);
   const { nodes, materials } = useGLTF("/heel.glb");
 
-  useEffect(() => {
-    if (props.cubeRotation) {
-      gsap.to(prevRotation.current, {
-        x: props.cubeRotation.x,
-        y: props.cubeRotation.y,
-        z: props.cubeRotation.z,
-        duration: 1,
-        ease: "power2.inOut",
-        onUpdate: () => {
-          ref.current.rotation.x = prevRotation.current.x;
-          ref.current.rotation.y = prevRotation.current.y;
-          ref.current.rotation.z = prevRotation.current.z;
-        },
-      });
-    }
-  }, [props.cubeRotation]);
-
   return (
-    <group ref={ref} {...props} dispose={null} position={[0, -3, 0]}>
+    <group {...props} dispose={null} position={[0, -3, 0]}>
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.sole.geometry}
         material={materials.sole}
-      />
+      >
+        <meshStandardMaterial
+          side={2}
+          color={currentVariation.meshNameList["sole"].color}
+          metalness={currentVariation.meshNameList["sole"].metalness}
+          roughness={currentVariation.meshNameList["sole"].roughness}
+        />
+      </mesh>
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.inner_base.geometry}
-        material={materials.inner_base}
-      />
+        // material={materials.inner_base}
+      >
+        <meshStandardMaterial
+          side={1}
+          color={currentVariation.meshNameList["inner_base"].color}
+          metalness={currentVariation.meshNameList["inner_base"].metalness}
+          roughness={currentVariation.meshNameList["inner_base"].roughness}
+        />
+      </mesh>
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.inner_side.geometry}
-        material={materials.inner_side}
-      />
+        // material={materials.inner_side}
+      >
+        <meshStandardMaterial
+          side={2}
+          color={currentVariation.meshNameList["inner_side"].color}
+          metalness={currentVariation.meshNameList["inner_side"].metalness}
+          roughness={currentVariation.meshNameList["inner_side"].roughness}
+        />
+      </mesh>
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.body.geometry}
-        material={materials.body}
+        // material={materials.body}
       >
-        {/* <meshStandardMaterial
-          color="#C90023"
-          metalness={0.0001}
-          roughness={0.077273}
-        /> */}
+        <meshStandardMaterial
+          side={2}
+          color={currentVariation.meshNameList["body"].color}
+          metalness={currentVariation.meshNameList["body"].metalness}
+          roughness={currentVariation.meshNameList["body"].roughness}
+        />
       </mesh>
       <mesh
         castShadow

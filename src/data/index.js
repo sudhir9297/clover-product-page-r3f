@@ -16,6 +16,17 @@ export const productVariation = [
       "/thumb/red/1-003.png",
       "/thumb/red/1-004.png",
     ],
+
+    meshNameList: {
+      sole: {
+        color: "#111111",
+        metalness: 0.0001,
+        roughness: 0.918182,
+      },
+      inner_side: { color: "#E7E7E7", metalness: 0.0001, roughness: 0.822727 },
+      inner_base: { color: "#E7B39C", metalness: 0.0001, roughness: 0.790909 },
+      body: { color: "#C90023", metalness: 0.0001, roughness: 0.077273 },
+    },
   },
   {
     id: 2,
@@ -34,6 +45,16 @@ export const productVariation = [
       "/thumb/red/1-003.png",
       "/thumb/red/1-004.png",
     ],
+    meshNameList: {
+      sole: {
+        color: "#E7B39C",
+        metalness: 0.0001,
+        roughness: 0.918182,
+      },
+      inner_side: { color: "#22241E", metalness: 0.0001, roughness: 0.822727 },
+      inner_base: { color: "#DFC8B8", metalness: 0.0001, roughness: 0.890909 },
+      body: { color: "#784430", metalness: 0.0001, roughness: 0.17273 },
+    },
   },
   {
     id: 3,
@@ -52,6 +73,16 @@ export const productVariation = [
       "/thumb/red/1-003.png",
       "/thumb/red/1-004.png",
     ],
+    meshNameList: {
+      sole: {
+        color: "#111111",
+        metalness: 0.0001,
+        roughness: 0.918182,
+      },
+      inner_side: { color: "#E7E7E7", metalness: 0.0001, roughness: 0.822727 },
+      inner_base: { color: "#E7B39C", metalness: 0.0001, roughness: 0.790909 },
+      body: { color: "#FFCF40", metalness: 1.0, roughness: 0.07273 },
+    },
   },
 ];
 
