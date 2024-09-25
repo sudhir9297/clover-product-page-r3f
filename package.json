@@ -11,8 +11,10 @@
   "dependencies": {
     "@react-three/drei": "^9.113.0",
     "@react-three/fiber": "^8.17.7",
+    "@react-three/postprocessing": "^2.16.2",
     "@types/three": "^0.168.0",
     "gsap": "^3.12.5",
+    "leva": "^0.9.35",
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",

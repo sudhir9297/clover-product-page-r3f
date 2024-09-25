@@ -37,9 +37,14 @@ const Details = ({ variation, handleVariationClick }) => {
           <div
             onClick={() => handleVariationClick(el)}
             key={el.id}
-            className={`relative h-16 w-16 cursor-pointer overflow-hidden rounded-md ${el.id === variation.id ? "border border-[#707070]" : "border"}`}
+            className={`relative h-16 w-16 cursor-pointer overflow-hidden rounded-md bg-[#F2F0EA] ${el.id === variation.id ? "border border-[#707070]" : "border"}`}
           >
-            <Image src={el.thumbnail} fill alt="product-variation" />
+            <Image
+              src={el.thumbnail}
+              fill
+              alt="product-variation"
+              objectFit="cover"
+            />
           </div>
         ))}
       </div>

@@ -1,5 +1,4 @@
 "use client";
-
 import { StoreProvider } from "@/context/store";
 import CanvasExperience from "./_components/CanvasExperience";
 import ProductDetails from "./_components/ProductDetails";

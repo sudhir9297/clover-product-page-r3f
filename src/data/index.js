@@ -8,13 +8,13 @@ export const productVariation = [
     totalReview: 42,
     rating: 4,
     price: 7360,
-    thumbnail: "/thumb/red/1-thumb.png",
+    thumbnail: "/thumb/red/1-1.webp",
     type: "red",
     variation: [
-      "/thumb/red/1-001.png",
-      "/thumb/red/1-002.png",
-      "/thumb/red/1-003.png",
-      "/thumb/red/1-004.png",
+      "/thumb/red/1-1.webp",
+      "/thumb/red/1-2.webp",
+      "/thumb/red/1-3.webp",
+      "/thumb/red/1-4.webp",
     ],
 
     meshNameList: {
@@ -37,23 +37,23 @@ export const productVariation = [
     totalReview: 22,
     rating: 3,
     price: 9020,
-    thumbnail: "/thumb/red/1-thumb.png",
-    type: "brown",
+    thumbnail: "/thumb/black/2-1.webp",
+    type: "black",
     variation: [
-      "/thumb/red/1-001.png",
-      "/thumb/red/1-002.png",
-      "/thumb/red/1-003.png",
-      "/thumb/red/1-004.png",
+      "/thumb/black/2-1.webp",
+      "/thumb/black/2-2.webp",
+      "/thumb/black/2-3.webp",
+      "/thumb/black/2-4.webp",
     ],
     meshNameList: {
       sole: {
-        color: "#E7B39C",
+        color: "#E8DDCD",
         metalness: 0.0001,
         roughness: 0.918182,
       },
-      inner_side: { color: "#22241E", metalness: 0.0001, roughness: 0.822727 },
-      inner_base: { color: "#DFC8B8", metalness: 0.0001, roughness: 0.890909 },
-      body: { color: "#784430", metalness: 0.0001, roughness: 0.17273 },
+      inner_side: { color: "#C1A995", metalness: 0.0001, roughness: 0.822727 },
+      inner_base: { color: "#DFBFB0", metalness: 0.0001, roughness: 0.890909 },
+      body: { color: "#22241E", metalness: 0.9, roughness: 0.07273 },
     },
   },
   {
@@ -65,13 +65,13 @@ export const productVariation = [
     totalReview: 12,
     rating: 4,
     price: 8118,
-    thumbnail: "/thumb/red/1-thumb.png",
-    type: "gold",
+    thumbnail: "/thumb/yellow/3-1.webp",
+    type: "yellow",
     variation: [
-      "/thumb/red/1-001.png",
-      "/thumb/red/1-002.png",
-      "/thumb/red/1-003.png",
-      "/thumb/red/1-004.png",
+      "/thumb/yellow/3-1.webp",
+      "/thumb/yellow/3-2.webp",
+      "/thumb/yellow/3-3.webp",
+      "/thumb/yellow/3-4.webp",
     ],
     meshNameList: {
       sole: {
@@ -81,15 +81,16 @@ export const productVariation = [
       },
       inner_side: { color: "#E7E7E7", metalness: 0.0001, roughness: 0.822727 },
       inner_base: { color: "#E7B39C", metalness: 0.0001, roughness: 0.790909 },
-      body: { color: "#FFCF40", metalness: 1.0, roughness: 0.07273 },
+      body: { color: "#FECD33", metalness: 0.1, roughness: 0.07273 },
     },
   },
 ];
 
+export const backgroundColor = ["#F2F0EA", "#97ABAC"];
+
 export const cameraPositionData = [
   {
     id: 1,
-
     position: {
       x: -5.075453386237844,
       y: 1.8358233998360152,
@@ -98,7 +99,6 @@ export const cameraPositionData = [
   },
   {
     id: 2,
-
     position: {
       x: -6.098182598043287,
       y: 0.75311000240668,
@@ -107,7 +107,6 @@ export const cameraPositionData = [
   },
   {
     id: 3,
-
     position: {
       x: 8.762512941088557,
       y: 1.8483189479944437,
