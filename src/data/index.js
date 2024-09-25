@@ -30,8 +30,8 @@ export const productVariation = [
   },
   {
     id: 2,
-    sku: "HEEL-BROWN-X008",
-    name: "Chestnut Luxe Stiletto",
+    sku: "HEEL-BLACK-X008",
+    name: "Obsidian Luxe Stiletto",
     subDesc:
       "A chic brown Stiletto pump with a slender heel, offering understated sophistication and versatile style.",
     totalReview: 22,
@@ -58,8 +58,8 @@ export const productVariation = [
   },
   {
     id: 3,
-    sku: "HEEL-GOLD-X008",
-    name: "Golden Glimmer Stiletto",
+    sku: "HEEL-YELLOW-X008",
+    name: "Yellow Glimmer Stiletto",
     subDesc:
       "A glamorous gold Stiletto pump with a high, shimmering heel that instantly elevates your look with luxe flair.",
     totalReview: 12,

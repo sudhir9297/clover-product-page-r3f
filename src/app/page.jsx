@@ -5,18 +5,6 @@ import ProductDetails from "./_components/ProductDetails";
 import FakeBreadCrumb from "./_components/FakeBreadCrumb";
 
 export default function Home() {
-  const handleTakeScreenshot = () => {
-    const link = document.createElement("a");
-    const canvas = document.querySelector("canvas");
-    link.setAttribute("download", `ss-${Date.now()}.png`);
-    link.setAttribute(
-      "href",
-      canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"),
-    );
-    link.click();
-    link.remove();
-  };
-
   return (
     <StoreProvider>
       <section>

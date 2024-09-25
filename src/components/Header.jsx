@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <nav className="flex w-full items-center justify-between border-b py-4">
+    <nav className="flex w-full items-center justify-between border-b py-4 text-[#199892]">
       <Logo />
       <a
         href="https://x.com/SeeOn__"
