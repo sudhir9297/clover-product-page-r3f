@@ -1,11 +1,11 @@
-import { StoreContext } from "@/context/store";
 import React, { useContext } from "react";
+import { StoreContext } from "@/context/store";
 
 const FakeBreadCrumb = () => {
   const { currentVariation } = useContext(StoreContext);
 
   return (
-    <div className="py-4 text-sm text-[#535665]">
+    <div className="text-fadeGray py-4 text-sm">
       Home / Women Footwear / Heels /{" "}
       <span className="font-semibold text-black">{currentVariation.name}</span>
     </div>

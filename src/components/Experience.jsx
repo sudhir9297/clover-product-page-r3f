@@ -19,9 +19,6 @@ export default function Experience() {
       gl={{ preserveDrawingBuffer: true }}
       style={{ width: "100%", height: "100%" }}
     >
-      {/* <color attach="background" args={["#F2F0EA"]} /> */}
-
-      <hemisphereLight intensity={0.5} />
       <Environment files={"/default.exr"} resolution={512}>
         <Lightformer
           intensity={2}

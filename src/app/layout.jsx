@@ -24,7 +24,7 @@ export const metadata = {
     siteName: "Clover | Heel Brand",
     images: [
       {
-        url: "/thumb/red/1-1.webp",
+        url: "/thumb/clover-og.webp",
         width: 1260,
         height: 800,
       },

@@ -25,7 +25,7 @@ export const productVariation = [
       },
       inner_side: { color: "#E7E7E7", metalness: 0.0001, roughness: 0.822727 },
       inner_base: { color: "#E7B39C", metalness: 0.0001, roughness: 0.790909 },
-      body: { color: "#C90023", metalness: 0.0001, roughness: 0.077273 },
+      body: { color: "#C90023", metalness: 0.1, roughness: 0.07273 },
     },
   },
   {
@@ -53,7 +53,7 @@ export const productVariation = [
       },
       inner_side: { color: "#C1A995", metalness: 0.0001, roughness: 0.822727 },
       inner_base: { color: "#DFBFB0", metalness: 0.0001, roughness: 0.890909 },
-      body: { color: "#22241E", metalness: 0.9, roughness: 0.07273 },
+      body: { color: "#22241E", metalness: 0.1, roughness: 0.07273 },
     },
   },
   {

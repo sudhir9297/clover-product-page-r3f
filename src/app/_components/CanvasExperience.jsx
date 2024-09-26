@@ -1,13 +1,13 @@
+import React, { useContext, useEffect, useState } from "react";
+import gsap from "gsap";
+import Image from "next/image";
+
 import Experience from "@/components/Experience";
 import { StoreContext } from "@/context/store";
 import { backgroundColor, cameraPositionData } from "@/data";
-import Image from "next/image";
-import React, { useContext, useEffect, useState } from "react";
-import gsap from "gsap";
 
 const CanvasExperience = () => {
   const { setCameraPosition, currentVariation } = useContext(StoreContext);
-
   const [bgColor, setBgColor] = useState(backgroundColor[0]);
 
   useEffect(() => {
@@ -26,12 +26,9 @@ const CanvasExperience = () => {
   return (
     <div className="flex h-[60vh] w-full flex-col gap-4 lg:h-full lg:w-[60%]">
       <div
-        className="background relative"
+        className="background relative h-full w-full overflow-hidden"
         style={{
-          width: "100%",
-          height: "100%",
           borderRadius: "10px",
-          overflow: "hidden",
         }}
       >
         <div className="absolute bottom-2 left-2 z-30 flex gap-1">
@@ -56,8 +53,9 @@ const CanvasExperience = () => {
             <Image
               src={`/thumb/${currentVariation.type}/${currentVariation.id}-${el.id}.webp`}
               fill
-              objectFit="cover"
+              sizes="100%"
               alt="thumbnail"
+              style={{ objectFit: "cover" }}
             />
           </div>
         ))}

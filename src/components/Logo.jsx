@@ -1,10 +1,10 @@
 import React from "react";
-import Logo from "./Logo";
+import { Clover } from "@/data/svg";
 
 function LogoWrapper() {
   return (
     <div className="flex h-full w-fit items-center justify-center">
-      <Logo className="h-6 w-6" />
+      <Clover />
       <div className="ml-1 text-2xl font-semibold text-[#3D403C]">
         Clover<span>.</span>
       </div>

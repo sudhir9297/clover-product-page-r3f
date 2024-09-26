@@ -2,7 +2,7 @@
 import { StoreProvider } from "@/context/store";
 import CanvasExperience from "./_components/CanvasExperience";
 import ProductDetails from "./_components/ProductDetails";
-import FakeBreadCrumb from "./_components/FakeBreadCrumb";
+import FakeBreadCrumb from "../components/FakeBreadCrumb";
 
 export default function Home() {
   return (

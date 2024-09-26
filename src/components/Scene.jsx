@@ -1,11 +1,5 @@
-import React, { Suspense, useContext, useEffect, useRef } from "react";
-import {
-  CameraControls,
-  OrbitControls,
-  Center,
-  Environment,
-  Bounds,
-} from "@react-three/drei";
+import React, { useContext, useEffect, useRef } from "react";
+import { OrbitControls, Center } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import gsap from "gsap";
 
