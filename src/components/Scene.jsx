@@ -35,8 +35,8 @@ function Scene() {
         enablePan={false}
         enableDamping
         dampingFactor={0.05}
-        minDistance={8}
-        maxDistance={16}
+        minDistance={12}
+        maxDistance={20}
       />
       <Center>
         <Model />

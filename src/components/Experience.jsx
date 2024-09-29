@@ -18,6 +18,7 @@ export default function Experience() {
     <Canvas
       gl={{ preserveDrawingBuffer: true }}
       style={{ width: "100%", height: "100%" }}
+      camera={{ fov: 45 }}
     >
       <Environment files={"/default.exr"} resolution={512}>
         <Lightformer
